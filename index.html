@@ -4,15 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="src/output.css">
+  <script src="https://unpkg.com/feather-icons"></script>
   <title>Landing Page</title>
 </head>
 <body>
 
   <!-- NAVBAR -->
   <nav class="bg-neutral-primary fixed w-full top-0 border-b border-default z-50">
-  <div class="relative flex items-center mx-auto p-4">
-
-    <a href="" class="flex items-center space-x-3">
+  <div class="relative flex items-center mx-auto p-4 ">
+    <a href="" class="flex items-center space-x-3 cursor-pointer">
       <img src="asset/logoo2.jpeg" class="h-10">
       <span class="text-xl font-semibold font-serif text-[#2B2363]">MentalCare</span>
     </a>
@@ -43,8 +43,8 @@
     </div>
 
     <div class="ml-auto">
-      <button class="text-white bg-[#7B76B3] px-3 py-2 rounded-base transition hover:-translate-y-1 hover:shadow-lg">
-        Contact us
+      <button class="text-white bg-[#7B76B3] px-3 py-2 rounded-base hover:bg-[#2B2363] transition hover:shadow-lg">
+        <a href="#hubungi-kami" class="text-white">Contact Us</a>
       </button>
     </div>
   </div>
@@ -53,16 +53,13 @@
 <!-- HOME -->
 <section id="home" class="pt-56 text-center">
   <h1 class="text-5xl md:text-9xl font-bold text-[#2B2363]">Mental<span class="font-light text-[#7B76B3]">Care</span></h1>
-
   <p class="mt-10 max-w-xl mx-auto text-lg font-medium text-[#2B2363]">Setiap perasaan itu penting dan layak didengar. Mulai perjalanan pemulihanmu hari ini bersama kami!</p>
-
-   <button class="mt-16 mb-16 bg-[#2B2363] text-white px-6 py-3 rounded-full shadow hover:bg-[#7b76b3] transition">Konsultasi sekarang →</button>
+   <button class="mt-16 mb-16 bg-[#2B2363] text-white px-6 py-3 rounded-full shadow hover:bg-[#7b76b3] cursor-pointer hover:-translate-y-2 hover:shadow-xl transition duration-300">Konsultasi sekarang →</button>
   </section>
 
   <!-- TENTANG -->
   <section id="about" class="bg-[#2B2363] text-white py-36 mt-36">
   <div class="mx-auto grid md:grid-cols-2 items-center">
-
     <div class="pl-24">
       <h2 class="text-5xl font-bold mb-4">
         Tentang <br>Mental<span class="text-[#7B76B3]">Care</span></span>
@@ -83,7 +80,6 @@
 <!-- FITUR -->
 <section id="fitur" class="pt-36 pb-20 text-center">
   <div class="max-w-6xl mx-auto px-6">
-    
     <h2 class="text-3xl font-bold text-white inline-block px-10 py-4 bg-[#2B2363] rounded-full">
       Fitur Andalan Kami
     </h2>
@@ -94,7 +90,6 @@
 
   <div class="mt-10 w-full bg-[#7B76B3] text-white overflow-hidden"> 
     <div class="grid md:grid-cols-2 items-center relative">
-
       <div class="p-10 flex flex-col items-center text-center">
         <div class="bg-[#2B2363] w-16 h-16 rounded-full flex items-center justify-center mb-4 text-lg font-semibold">
           1
@@ -108,7 +103,6 @@
       </div>
 
       <div class="hidden md:block absolute left-1/2 top-0 h-full w-[2px] bg-white/40"></div>
-
       <div class="p-10 flex flex-col items-center text-center">
         <div class="bg-[#2B2363] w-16 h-16 rounded-full flex items-center justify-center mb-4 text-lg font-semibold">
           2
@@ -126,77 +120,148 @@
 
 <!-- REKOMENDASI PSIKOLOG -->
 <section id="rekomen" class="py-20 text-center">
-  
   <div class="max-w-3xl mx-auto px-6">
     <h2 class="text-5xl font-bold text-[#2B2363] leading-tight">
       Psikolog Kami Yang <br> Berpengalaman
     </h2>
-
     <p class="mt-6 text-base leading-relaxed">
      Kami menghadirkan psikolog pilihan yang telah berpengalaman menangani berbagai permasalahan kesehatan mental. Setiap psikolog yang direkomendasikan telah melalui proses seleksi dan verifikasi profesional, serta memiliki latar belakang pendidikan dan praktik klinis yang terpercaya. 
     </p>
   </div>
+ <div class="mt-14 max-w-7xl mx-auto px-6 grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
+  <div class="text-left bg-neutral-primary-soft block p-6 border border-default rounded-base shadow-xs cursor-pointer hover:-translate-y-2 hover:shadow-xl transition duration-300">
+    <img src="asset/dr-arga.jpeg" alt="dr arga"
+         class="w-full h-64 object-cover rounded-xl">
 
-  <div class="mt-14 max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-10">
-    <div class="text-left">
-      <img src="asset/dr-arga.jpeg" alt="dr arga"
-           class="h-64 object-cover rounded-xl">
-
-      <h3 class="mt-4 text-lg font-semibold text-[#2B2363]">
-        Dr. Arga Widodo, M.Psi
-      </h3>
-
-      <div class="flex items-center gap-2 text-gray-400 text-sm mt-1">
-        <span>⏱</span>
-        <span>5 Tahun Pengalaman</span>
-      </div>
+    <h3 class="mt-4 text-lg font-semibold text-[#2B2363]">
+      Dr. Arga Widodo, M.Psi
+    </h3>
+    <div class="flex items-center gap-2 text-gray-400 text-sm mt-1">
+      <span>⏱</span>
+      <span>5 Tahun Pengalaman</span>
     </div>
+  </div>
 
-    <div class="text-left">
-      <img src="asset/dr-kaysan.jpeg" alt="dr kaysan"
-           class="h-64 object-cover rounded-xl">
+  <div class="text-left bg-neutral-primary-soft block p-6 border border-default rounded-base shadow-xs cursor-pointer hover:-translate-y-2 hover:shadow-xl transition duration-300">
+    <img src="asset/dr-kaysan.jpeg" alt="dr kaysan"
+         class="w-full h-64 object-cover rounded-xl">
 
-      <h3 class="mt-4 text-lg font-semibold text-[#2B2363]">
-        Dr. Kaysan Kalla, M.Psi
-      </h3>
-
-      <div class="flex items-center gap-2 text-gray-400 text-sm mt-1">
-        <span>⏱</span>
-        <span>3 Tahun Pengalaman</span>
-      </div>
+    <h3 class="mt-4 text-lg font-semibold text-[#2B2363]">
+      Dr. Kaysan Kalla, M.Psi
+    </h3>
+    <div class="flex items-center gap-2 text-gray-400 text-sm mt-1">
+      <span>⏱</span>
+      <span>3 Tahun Pengalaman</span>
     </div>
+  </div>
 
-    <div class="text-left">
-      <img src="asset/dr-manila.jpeg" alt="dr-manila"
-           class="h-64 object-cover rounded-xl">
+  <div class="text-left bg-neutral-primary-soft block p-6 border border-default rounded-base shadow-xs cursor-pointer hover:-translate-y-2 hover:shadow-xl transition duration-300">
+    <img src="asset/dr-manila.jpeg" alt="dr manila"
+         class="w-full h-64 object-cover rounded-xl">
 
-      <h3 class="mt-4 text-lg font-semibold text-[#2B2363]">
-        Dr. Manila Karamoy, M.Psi
-      </h3>
-
-      <div class="flex items-center gap-2 text-gray-400 text-sm mt-1">
-        <span>⏱</span>
-        <span>7 Tahun Pengalaman</span>
-      </div>
+    <h3 class="mt-4 text-lg font-semibold text-[#2B2363]">
+      Dr. Manila Karamoy, M.Psi
+    </h3>
+    <div class="flex items-center gap-2 text-gray-400 text-sm mt-1">
+      <span>⏱</span>
+      <span>7 Tahun Pengalaman</span>
     </div>
+  </div>
 
-     <div class="text-left">
-      <img src="asset/dr-cheng.jpeg" alt="dr-cheng"
-           class="h-64 object-cover rounded-xl">
+  <div class="text-left bg-neutral-primary-soft block p-6 border border-default rounded-base shadow-xs cursor-pointer hover:-translate-y-2 hover:shadow-xl transition duration-300">
+    <img src="asset/dr-cheng.jpeg" alt="dr cheng"
+         class="w-full h-64 object-cover rounded-xl">
 
-      <h3 class="mt-4 text-lg font-semibold text-[#2B2363]">
-        Dr. Cheng Kevin, M.Psi
-      </h3>
+    <h3 class="mt-4 text-lg font-semibold text-[#2B2363]">
+      Dr. Cheng Kevin, M.Psi
+    </h3>
+    <div class="flex items-center gap-2 text-gray-400 text-sm mt-1">
+      <span>⏱</span>
+      <span>7 Tahun Pengalaman</span>
+    </div>
+  </div>
+</div>
+</section>
 
-      <div class="flex items-center gap-2 text-gray-400 text-sm mt-1">
-        <span>⏱</span>
-        <span>7 Tahun Pengalaman</span>
+<!-- CONTACT US   -->
+<section id="hubungi-kami" class="w-full text-white">
+  <div class="relative">
+    <img src="asset/psikiater-dan-pasien.jpg" alt="Dokter dan Pasien" class="absolute inset-0 w-full h-full object-cover">
+    <div class="absolute inset-0 bg-[#2B2363]/90"></div>
+    <div class="relative max-w-7xl mx-auto px-10 py-24 grid md:grid-cols-2 gap-90 items-center">
+      <div>
+        <div class="flex items-center gap-4 mb-10">
+          <img src="asset/logo1.png" class="w-32 h-32 rounded-full">
+          <h3 class="text-2xl font-semibold font-serif">MentalCare</h3>
+        </div>
+        <p class="text-xl  leading-relaxed text-gray-200 max-w-lg">
+          MentalCare adalah platform kesehatan mental yang menyediakan layanan konsultasi 
+          dengan psikolog profesional serta artikel edukatif terpercaya. Kami hadir untuk 
+          memberikan ruang yang aman dan nyaman, sehingga anda dapat memahami diri lebih 
+          baik dan menjalani hidup dengan lebih sehat secara mental.
+        </p>
+      </div>
+
+      <div class="mt-20">
+        <h3 class="text-2xl font-semibold mb-8">Hubungi Kami</h3>
+        <div class="space-y-6 text-base md:text-lg text-gray-200">
+          <div class="flex items-center gap-4">
+           <i data-feather="mail" class="w-6 h-6"></i>
+            <span>support@mentalcare.id</span>
+          </div>
+          <div class="flex items-center gap-4">
+            <i data-feather="phone" class="w-6 h-6"></i>
+            <span>+62 812-3456-7890</span>
+          </div>
+          <div class="flex items-center gap-4">
+            <i data-feather="map-pin" class="w-6 h-6"></i>
+            <span>Depok, Indonesia</span>
+          </div>
+        </div>
       </div>
     </div>
   </div>
-</section>
+</section>  
 
-<script src="../path/to/flowbite/dist/flowbite.min.js"></script>
+<!-- FOOTER -->
+ <footer>
+  <div class="px-4 py-6 bg-[#7B76B3] md:flex md:items-center md:justify-between">
+        <span class="text-base text-white sm:text-center">© 2026 MentalCare. All rights reserved.</span>
+        <div class="flex mt-4 sm:justify-center md:mt-0 space-x-2 rtl:space-x-reverse">
+          <a href="#" class="bg-[#2B2363] w-10 h-10 rounded-full flex items-center justify-center text-white transition hover:-translate-y-1 hover:shadow-lg ms-5">
+                <i data-feather="youtube" class="w-5 h-5"></i>
+                <span class="sr-only">YouTube</span>
+            </a>
+            <a href="#" class="bg-[#2B2363] w-10 h-10 rounded-full flex items-center justify-center text-white transition hover:-translate-y-1 hover:shadow-lg ms-5">
+                <i data-feather="linkedin" class="w-5 h-5"></i>
+                <span class="sr-only">LinkedIn</span>
+            </a>
+            <a href="#" class="bg-[#2B2363] w-10 h-10 rounded-full flex items-center justify-center text-white transition hover:-translate-y-1 hover:shadow-lg ms-5">
+                <i data-feather="instagram" class="w-5 h-5"></i>
+                <span class="sr-only">Instagram</span>
+            </a>
+            <a href="#" class="bg-[#2B2363] w-10 h-10 rounded-full flex items-center justify-center text-white transition hover:-translate-y-1 hover:shadow-lg ms-5">
+                <i data-feather="github" class="w-5 h-5"></i>
+                <span class="sr-only">GitHub account</span>
+            </a>
+        </div>
+      </div>
+    </div>
+</footer>
+
+<script>
+  src="../path/to/flowbite/dist/flowbite.min.js"
+
+  feather.replace();
+      
+      document.getElementById("sub").addEventListener("click", () => {
+      setTimeout(() => {
+        document.getElementById("nama").value = "";
+        document.getElementById("email").value = "";
+        document.getElementById("message").value = "";
+      }, 500);
+    });
+</script>
 
 </body>
 </html>
