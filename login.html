@@ -10,17 +10,13 @@
 
   <body class="bg-[#2B2363] min-h-screen flex flex-col">
     <div class="flex items-center justify-center flex-1">
-      <div
-        class="w-full max-w-7xl mx-auto grid md:grid-cols-2 items-center px-6"
-      >
+      <div class="w-full max-w-7xl mx-auto grid md:grid-cols-2 items-center px-6">
+
         <div class="text-white">
-            
+          
           <!-- TEXT LOGIN -->
           <div class="mb-10 -mt-20">
-            <a
-              href="index.html"
-              class="flex items-center gap-2 text-white mb-2"
-            >
+            <a href="index.html" class="flex items-center gap-2 text-white mb-2">
               <i data-feather="arrow-left"></i>
               <span class="font-semibold text-xl">Login</span>
             </a>
@@ -28,52 +24,58 @@
           </div>
 
           <!-- FORM LOGIN -->
-          <div class="bg-gray-200 rounded-3xl p-8 max-w-md shadow-lg">
-            <div class="relative mb-4">
-              <i
-                data-feather="mail"
-                class="absolute left-4 top-1/2 -translate-y-1/2 text-gray-500 w-5 h-5"
-              >
-              </i>
+          <form action="home.html" class="bg-gray-200 rounded-3xl p-8 max-w-md shadow-lg">
 
+            <!-- EMAIL -->
+            <div class="relative mb-4">
+              <i data-feather="mail"
+                class="absolute left-4 top-1/2 -translate-y-1/2 text-[#7b76b3] w-5 h-5"></i>
               <input
                 type="email"
-                placeholder="Email..."
-                class="w-full pl-12 pr-4 py-3 rounded-full border border-gray-400 outline-none shadow-inner text-black"
+                name="email"
                 required
+                placeholder="Email..."
+                class="w-full pl-12 pr-4 py-3 rounded-full border border-gray-400 outline-none shadow-inner text-[#2B2363]"
               />
             </div>
 
-            <div class="relative mb-2">
-              <i
-                data-feather="lock"
-                class="absolute left-4 top-1/2 -translate-y-1/2 text-gray-500 w-5 h-5"
-              >
-              </i>
+            <!-- PASSWORD -->
+            <div class="relative mb-4">
+              <i data-feather="lock"
+                class="absolute left-4 top-1/2 -translate-y-1/2 text-[#7b76b3] w-5 h-5"></i>
 
               <input
                 type="password"
-                placeholder="Password..."
-                class="w-full pl-12 pr-4 py-3 rounded-full border border-gray-400 outline-none shadow-inner text-black"
+                id="password"
                 required
+                placeholder="Password..."
+                class="w-full pl-12 pr-12 py-3 rounded-full border border-gray-400 outline-none shadow-inner text-[#7B76B3]"
               />
+
+              <i
+                data-feather="eye"
+                onclick="Password()"
+                class="absolute right-4 top-1/2 -translate-y-1/2 cursor-pointer text-[#7b76b3] w-5 h-5">
+              </i>
             </div>
 
+            <!-- LUPA PASSWORD -->
             <div class="text-right text-sm mb-6">
               <a href="#" class="text-blue-500 hover:underline">
                 Lupa Password
               </a>
             </div>
 
-            <a
-              href="home.html"
-              class="block w-full text-center bg-[#2B2363] text-white py-3 rounded-full font-semibold hover:bg-[#7B76B3] transition"
-            >
+            <!-- TOMBOL LOGIN -->
+            <button
+              type="submit"
+              class="w-full bg-[#2B2363] text-white py-3 rounded-full font-semibold hover:bg-[#7B76B3] transition">
               Login
-            </a>
-          </div>
+            </button>
 
-          <!-- SOCIAL LOGIN -->
+          </form>
+
+          <!-- OPSI LOGIN LAIN -->
           <div class="mt-10 max-w-md">
             <div class="flex items-center gap-4 text-gray-300 text-sm">
               <div class="flex-1 h-[1px] bg-gray-400"></div>
@@ -82,15 +84,11 @@
             </div>
 
             <div class="flex gap-4 mt-6">
-              <button
-                class="flex items-center justify-center gap-2 bg-white text-black px-4 py-2 rounded-full w-full shadow max-w-md hover:-translate-y-2 hover:shadow-xl transition duration-300 cursor-pointer"
-              >
+              <button class="flex items-center justify-center gap-2 bg-white text-black px-4 py-2 rounded-full w-full shadow hover:-translate-y-2 hover:shadow-xl transition duration-300">
                 <img src="asset/google.jpg" class="w-7" />Google
               </button>
 
-              <button
-                class="flex items-center justify-center gap-2 bg-white text-black px-4 py-2 rounded-full w-full shadow max-w-md hover:-translate-y-2 hover:shadow-xl transition duration-300 cursor-pointer"
-              >
+              <button class="flex items-center justify-center gap-2 bg-white text-black px-4 py-2 rounded-full w-full shadow hover:-translate-y-2 hover:shadow-xl transition duration-300">
                 <img src="asset/whatsapp.jpg" class="w-5 rounded-sm" />WhatsApp
               </button>
             </div>
@@ -99,9 +97,9 @@
           <!-- BUAT AKUN -->
           <div class="mt-6 max-w-md text-center text-sm text-gray-300">
             <span>Belum punya akun? </span>
-            <a href="daftar.html" class="text-blue-400 hover:underline"
-              >Buat Akun</a
-            >
+            <a href="daftar.html" class="text-blue-400 hover:underline">
+              Buat Akun
+            </a>
           </div>
         </div>
 
@@ -115,6 +113,16 @@
 
     <script>
       feather.replace();
+
+      function Password() {
+        const input = document.getElementById("password");
+
+        if (input.type === "password") {
+          input.type = "text";
+        } else {
+          input.type = "password";
+        }
+      }
     </script>
   </body>
 </html>
