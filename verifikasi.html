@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/output.css" />
+    <script src="https://unpkg.com/feather-icons"></script>
+    <title>Verifikasi</title>
+  </head>
+
+  <body class="bg-white min-h-screen flex items-center">
+    <div
+      class="w-full max-w-7xl mx-auto grid md:grid-cols-2 items-center px-6 relative"
+    >
+      <div
+        class="hidden md:block absolute left-1/2 top-0 h-full w-[2px] bg-gray-300"
+      ></div>
+      <div class="text-[#2B2363] pr-10">
+        <!-- TEXT -->
+        <div class="mb-10 -mt-16">
+          <a href="lupaPassword.html" class="flex items-center gap-2 mb-2">
+            <i data-feather="arrow-left"></i>
+            <span class="font-semibold text-xl">Verifikasi</span>
+          </a>
+
+          <p class="text-[#7B76B3] text-sm max-w-sm">
+            Masukkan kode OTP yang anda dapat dari email
+          </p>
+        </div>
+
+        <!-- FORM -->
+        <form action="perbaruiPassword.html" id="otpForm" class="max-w-md">
+          <div class="flex justify-between mb-8 max-w-md">
+            <input
+              type="text"
+              maxlength="1"
+              inputmode="numeric"
+              class="otp w-14 h-14 text-center text-xl rounded-full border-2 border-[#7B76B3] focus:border-[#2B2363] focus:ring-2 focus:ring-[#2B2363]/30 outline-none transition"
+              required
+            />
+            <input
+              type="text"
+              maxlength="1"
+              inputmode="numeric"
+              class="otp w-14 h-14 text-center text-xl rounded-full border-2 border-[#7B76B3] focus:border-[#2B2363] focus:ring-2 focus:ring-[#2B2363]/30 outline-none transition"
+              required
+            />
+            <input
+              type="text"
+              maxlength="1"
+              inputmode="numeric"
+              class="otp w-14 h-14 text-center text-xl rounded-full border-2 border-[#7B76B3] focus:border-[#2B2363] focus:ring-2 focus:ring-[#2B2363]/30 outline-none transition"
+              required
+            />
+            <input
+              type="text"
+              maxlength="1"
+              inputmode="numeric"
+              class="otp w-14 h-14 text-center text-xl rounded-full border-2 border-[#7B76B3] focus:border-[#2B2363] focus:ring-2 focus:ring-[#2B2363]/30 outline-none transition"
+              required  
+            />
+          </div>
+
+          <!-- BUTTON VERIFIKASI -->
+          <button
+            type="submit"
+            class="w-full bg-[#2B2363] text-white py-3 rounded-xl font-semibold hover:bg-[#7B76B3] transition"
+          >
+            Verifikasi
+          </button>
+
+          <!-- RESEND -->
+          <p class="text-center mt-4 text-sm">
+            <a href="#" class="text-blue-500 hover:underline">
+              Kirim Ulang Kode
+            </a>
+          </p>
+        </form>
+      </div>
+
+      <!-- FOTO -->
+      <div class="hidden md:flex justify-center pl-10">
+        <img
+          src="asset/completed-task-31.png"
+          class="w-[300px]"
+          alt="verification"
+        />
+      </div>
+    </div>
+
+    <!-- SCRIPT -->
+    <script>
+      feather.replace();
+    </script>
+  </body>
+</html>
